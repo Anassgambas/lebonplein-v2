@@ -1,0 +1,776 @@
+.tank {
+    width: 200px;
+}
+
+body,
+html {
+    background-color: #E5F0F1!important;
+}
+.centring{
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+    }
+  
+  .centring a {
+     color: #96B6B9 ;
+  }
+   
+.ctn {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    clip-path: circle(150% at calc(50% - 0px - var(--page-component-margin, 0px)) calc(90% + var(--page-component-margin, 0px)));
+}
+
+#svg {
+    height: 90%;
+    max-height: 500px;
+}
+
+p {
+    text-align: left;
+    font: normal normal 600 24px/32px Segoe UI;
+    letter-spacing: 0px;
+    color: #003A40;
+}
+
+#selector {
+    margin-top: 120px;
+}
+
+#selectMarque {
+    width: 60%;
+    height: 53px;
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align-last: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #336166;
+    border-radius: 25px;
+    opacity: 1;
+    text-align: left;
+    font: normal normal 600 24px/32px Segoe UI;
+    letter-spacing: 0px;
+    color: #003A40;
+    opacity: 0.66;
+}
+
+#etapes,
+#home {
+    margin-top: 20px;
+}
+
+#bouton_valider {
+    margin-bottom: 15px;
+}
+
+#logo {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#backArrow {
+    position: absolute;
+    padding-left: 15px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#infos {
+    position: absolute;
+    padding-left: 15px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+/* Modal partage */
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.modal-content h6 {
+    margin-bottom: 30px;
+    text-align: left;
+    font: normal normal normal 24px/32px Segoe UI;
+    font-size: 32px;
+    letter-spacing: 0px;
+    color: #336166;
+    opacity: 1;
+}
+
+.modal-content p {
+    margin-bottom: 25px;
+    color: #7f9b9e;
+}
+
+
+/* The Close Button */
+
+.close,
+.closeInfos {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.closeInfos:hover,
+.closeInfos:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Menu de partage */
+
+.modal-content ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* .modal-content ul::-webkit-scrollbar {
+    display: none;
+} */
+
+.modal-content li {
+    margin-left: 2px;
+    display: inline-block;
+    /*pour IE*/
+}
+
+.modal-content input {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px 30px 30px 30px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.modal-content button {
+    width: 100%;
+    margin: 0 0 0 0!important;
+}
+
+.modal-content div {
+    display: flex;
+    width: 100%;
+    margin: 0 0 1em 0;
+}
+
+.modal-content ul li img {
+    width: 130px;
+}
+
+.modal-content input {
+    flex-grow: 1;
+    width: 450px;
+    border: 0px;
+    box-shadow: 0px 3px 6px #00000029!important;
+}
+
+.modal-content button {
+    margin-left: 10px;
+    padding: 0 1em;
+    width: 40%;
+    margin-left: -60px!important;
+}
+
+.modal-content div {
+    padding-top: 40px;
+}
+
+#copy {
+    font-size: 18px!important;
+}
+
+p.partage {
+    text-align: center!important;
+    font-size: 24px!important;
+}
+
+.modal-content a {
+    color: inherit;
+    font: inherit;
+}
+
+#footer {
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+    font-size: medium;
+    opacity: 66%;
+    margin-left: calc((100% - 223px)/2);
+}
+
+@media (max-width: 500px) {
+    #logo {
+        height: 10vh;
+    }
+    .modal {
+        position: fixed!important;
+    }
+    .ctn {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+    #result,
+    #etapes,
+    #home {
+        width: 100%;
+        height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        clip-path: circle(150% at calc(50% - 0px - var(--page-component-margin, 0px)) calc(90% - 70px + var(--page-component-margin, 0px)));
+        z-index: 1;
+    }
+    #divsvg {
+        height: calc(100% - 133px - 13vh - 17vh);
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5%;
+    }
+    #result {
+        background-color: #66D8E6;
+        /* animation: circle 1.5s; */
+        padding-top: 130px;
+    }
+    #cross {
+        position: absolute;
+        top: 170px;
+        right: 40px;
+        width: 60px;
+        cursor: pointer;
+    }
+    @keyframes circle {
+        0% {
+            clip-path: circle(3% at calc(50% - 0px - var(--page-component-margin, 0px)) calc(90% - 70px + var(--page-component-margin, 0px)));
+        }
+        15% {
+            clip-path: circle(10% at calc(50% - 0px - var(--page-component-margin, 0px)) calc(90% - 70px + var(--page-component-margin, 0px)));
+        }
+        30% {
+            clip-path: circle(5% at calc(50% - 0px - var(--page-component-margin, 0px)) calc(90% - 70px + var(--page-component-margin, 0px)));
+        }
+        100% {
+            clip-path: circle(150% at calc(50% - 0px - var(--page-component-margin, 0px)) calc(90% - 70px + var(--page-component-margin, 0px)));
+        }
+    }
+    #partager {
+        width: 300px;
+        height: 50px;
+        margin-right: calc((100% - 300px) * 0.5)!important;
+        margin-left: calc((100% - 300px) * 0.5)!important;
+        margin-top: 10vh;
+        background: #96B6B9 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 33px!important;
+        text-align: center;
+        font: normal normal normal 32px/43px Segoe UI;
+        font-size: 24px!important;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        border-style: hidden;
+        cursor: pointer;
+    }
+    #bouton_go {
+        width: 100px;
+        height: 60px;
+        margin-right: calc((100% - 100px) * 0.5)!important;
+        margin-left: calc((100% - 100px) * 0.5)!important;
+        background: #66D8E5 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 33px!important;
+        text-align: center;
+        font: normal normal normal 32px/43px Segoe UI;
+        font-size: 32px!important;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        border-style: hidden;
+        margin-top: 10vh;
+    }
+    h1 {
+        text-align: center;
+        font: normal normal 600 48px/36px Segoe UI;
+        letter-spacing: 0px;
+        color: #003A40;
+        opacity: 0.8;
+        font-size: 36px!important;
+        margin-bottom: 16px!important;
+    }
+    h2 {
+        text-align: center;
+        font: normal normal normal 32px/43px Segoe UI;
+        letter-spacing: 0px;
+        color: #003A40;
+        opacity: 0.8;
+        font-size: 24px!important;
+        margin-bottom: 16px!important;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    h3 {
+        text-align: center!important;
+        font: normal normal bold 72px/64px Segoe UI!important;
+        letter-spacing: 0px!important;
+        color: #FFFFFF!important;
+        font-size: 6vh!important;
+        line-height: 6vh!important;
+        font-weight: bold!important;
+        margin-bottom: 5px!important;
+    }
+    h3#welcome2 {
+        text-align: center;
+        font: normal normal normal 32px/43px Segoe UI;
+        letter-spacing: 0px;
+        color: #003A40!important;
+        opacity: 0.8;
+        font-size: 18px!important;
+        font-weight: normal!important;
+        margin-bottom: 16px!important;
+        line-height: 32px!important;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    h4 {
+        
+        text-align: center!important;
+        font: normal normal normal 11px/31px Segoe UI!important;
+        letter-spacing: 0px!important;
+        color: #FFFFFF!important;
+        font-size: 20px!important;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    h5 {
+        text-align: center!important;
+        font: normal normal normal 48px/36px Segoe UI!important;
+        letter-spacing: 0px!important;
+        color: gray;
+        font-size: 16px!important;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 40px;
+    }
+    #welcome1 {
+        margin-top: 10vh;
+        width: 55%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0px!important;
+    }
+    #welcome2 {
+        margin-top: 1vh;
+        width: 55%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0px!important;
+    }
+    button {
+        width: 40%;
+        height: 50px;
+        margin-right: 30%!important;
+        margin-left: 30%!important;
+        background: #66D8E5 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 33px!important;
+        text-align: center;
+        font: normal normal normal 32px/43px Segoe UI;
+        font-size: 24px!important;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        border-style: hidden;
+        cursor: pointer;
+    }
+    button.inactive {
+        width: 40%;
+        height: 50px;
+        margin-right: 30%!important;
+        margin-left: 30%!important;
+        background: grey 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 33px!important;
+        text-align: center;
+        font: normal normal normal 32px/43px Segoe UI;
+        font-size: 24px!important;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 0.3;
+        border-style: hidden;
+        cursor: default!important;
+    }
+    .feedback {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+    .feedback li {
+        display: inline-block;
+        width: 49%;
+    }
+    .feedback button {
+        font-size: 24px!important;
+        border-radius: 10px!important;
+        background: white;
+        color: #66D8E5;
+        opacity: 1;
+    }
+    button:hover {
+        opacity: 1!important;
+    }
+    button {
+        opacity: 0.9!important;
+    }
+    #helpmsg {
+        position: absolute;
+        width: 20vw;
+        bottom: 4vh;
+        right: 1vw;
+    }
+    #helpmsg p {
+        text-align: left;
+        font: normal normal normal 20px/27px Segoe UI;
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: #66D8E5;
+        opacity: 0.6;
+    }
+    .modal-content p {
+        font-size: 5vw;
+    }
+}
+
+@media (min-width: 500px) {
+    #logo {
+        height: 120px;
+    }
+    .modal {
+        position: relative!important;
+    }
+    #divsvg {
+        width: 240px;
+        margin-left: 151px;
+        margin-right: 109px;
+    }
+    .ctn {
+        width: 500px;
+        height: 950px;
+        margin-top: 50px;
+    }
+    #result,
+    #etapes,
+    #home {
+        width: 500px;
+        height: 100%;
+        padding-bottom: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        position: absolute;
+        clip-path: circle(150% at calc(50% - 0px - var(--page-component-margin, 0px)) calc(90% - 70px + var(--page-component-margin, 0px)));
+        z-index: 1;
+    }
+.directions-card {
+    display: none;
+}
+
+.directions-card-medium-large{
+    display: none;
+}
+     #result {
+        background-color: #66D8E6;
+        animation: circle 1.5s; 
+        padding-top: 100px;
+    }
+    #cross {
+        position: absolute;
+        top: 60px;
+        right: 80px;
+        width: 60px;
+        cursor: pointer;
+    }
+    @keyframes circle {
+        0% {
+            clip-path: circle(3% at calc(50% - 0px - var(--page-component-margin, 0px)) calc(90% - 70px + var(--page-component-margin, 0px)));
+        }
+        15% {
+            clip-path: circle(10% at calc(50% - 0px - var(--page-component-margin, 0px)) calc(90% - 70px + var(--page-component-margin, 0px)));
+        }
+        30% {
+            clip-path: circle(5% at calc(50% - 0px - var(--page-component-margin, 0px)) calc(90% - 70px + var(--page-component-margin, 0px)));
+        }
+        100% {
+            clip-path: circle(150% at calc(50% - 0px - var(--page-component-margin, 0px)) calc(90% - 70px + var(--page-component-margin, 0px)));
+        }
+    }
+    #welcome1 {
+        margin-top: 50px;
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #welcome2 {
+        margin-top: 13px;
+        width: 55%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #partager {
+        width: 60%;
+        height: 50px;
+        margin-right: 20%!important;
+        margin-left: 20%!important;
+        margin-top: 150px;
+        background: #96B6B9 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 33px!important;
+        text-align: center;
+        font: normal normal normal 32px/43px Segoe UI;
+        font-size: 24px!important;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        border-style: hidden;
+        cursor: pointer;
+    }
+    #bouton_go {
+        width: 20%;
+        height: 60px;
+        margin-right: 40%!important;
+        margin-left: 40%!important;
+        background: #66D8E5 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 33px!important;
+        text-align: center;
+        font: normal normal normal 32px/43px Segoe UI;
+        font-size: 32px!important;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        border-style: hidden;
+        margin-top: 50px;
+    }
+    h1 {
+        text-align: center;
+        font: normal normal 600 48px/64px Segoe UI;
+        letter-spacing: 0px;
+        color: #003A40;
+        opacity: 0.8;
+        font-size: 48px!important;
+        margin-bottom: 16px!important;
+    }
+    h2 {
+        text-align: center;
+        font: normal normal normal 32px/43px Segoe UI;
+        letter-spacing: 0px;
+        color: #003A40;
+        opacity: 0.8;
+        font-size: 32px;
+        margin-bottom: 16px!important;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    h3 {
+        text-align: center!important;
+        font: normal normal bold 72px/64px Segoe UI!important;
+        letter-spacing: 0px!important;
+        color: #FFFFFF;
+        font-size: 72px!important;
+        font-weight: bold!important;
+        margin-bottom: 5px!important;
+    }
+    h3#welcome2 {
+        text-align: center;
+        font: normal normal normal 32px/43px Segoe UI;
+        letter-spacing: 0px;
+        color: #003A40!important;
+        opacity: 0.8;
+        font-size: 24px!important;
+        line-height: 36px!important;
+        font-weight: normal!important;
+        margin-bottom: 16px!important;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    h4 {
+        text-align: center!important;
+        font: normal normal normal 48px/48px Segoe UI!important;
+        letter-spacing: 0px!important;
+        color: #FFFFFF!important;
+        font-size: 35px!important;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    h5 {
+        text-align: center!important;
+        font: normal normal normal 48px/36px Segoe UI!important;
+        letter-spacing: 0px!important;
+        color: gray;
+        font-size: 15px!important;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+     }
+    button {
+        width: 40%;
+        height: 50px;
+        margin-right: 30%!important;
+        margin-left: 30%!important;
+        background: #66D8E5 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 33px!important;
+        text-align: center;
+        font: normal normal normal 32px/43px Segoe UI;
+        font-size: 32px!important;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        border-style: hidden;
+        cursor: pointer;
+    }
+    button.inactive {
+        width: 40%;
+        height: 50px;
+        margin-right: 30%!important;
+        margin-left: 30%!important;
+        background: grey 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 33px!important;
+        text-align: center;
+        font: normal normal normal 32px/43px Segoe UI;
+        font-size: 32px!important;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 0.3;
+        border-style: hidden;
+        cursor: default!important;
+    }
+    .feedback {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+    .feedback li {
+        display: inline-block;
+        width: 49%;
+    }
+    .feedback button {
+        font-size: 24px!important;
+        border-radius: 10px!important;
+        background: white;
+        color: #66D8E5;
+        opacity: 1;
+    }
+    button:hover {
+        opacity: 1!important;
+    }
+    button {
+        opacity: 0.9!important;
+    }
+    button.inactive {
+        opacity: 1!important;
+    }
+    #helpmsg {
+        position: absolute;
+        width: 100px;
+        bottom: 200px;
+        right: 25px;
+    }
+    #helpmsg p {
+        text-align: left;
+        font: normal normal normal 20px/27px Segoe UI;
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: #66D8E5;
+        animation: opacity 2s infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes opacity {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.9;
+        }
+        60% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}
