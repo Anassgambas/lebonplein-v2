@@ -1,0 +1,135 @@
+/* Style #1 */
+.loading {
+  display: flex;
+  justify-content: center;
+}
+
+.loading--full-height {
+  align-items: center;
+  height: 100%;
+}
+
+.loading::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 10px solid #dddddd;
+  border-top-color: #009579;
+  border-radius: 50%;
+  transform: rotate(0.16turn);
+  animation: loading 1s ease infinite;
+}
+.retour{
+  display: flex;
+  width: 100%;
+  left: 50%;
+  text-align: center;
+  justify-items: center;
+}
+@keyframes loading {
+  /* Safari support */
+  from {
+    transform: rotate(0turn);
+  }
+  
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Style #2 */
+.loading-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.loading-2--full-height {
+  align-items: center;
+  height: 100%;
+}
+
+.loading-2::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: #009579;
+  opacity: 0.5;
+  border-radius: 50%;
+  animation: loading-2 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes loading-2 {
+  /* Safari support */
+  from {
+    opacity: 0;
+    transform: scale(1);
+  }
+  
+  to {
+    opacity: 1;
+    transform: scale(1.75);
+  }
+}
+
+
+
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 180px;
+    /* The height is 400 pixels */
+    width: 300px;
+    /* The width is the width of the web page */
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+#maps{
+  height: 300px;
+  /* The height is 400 pixels */
+  width: 500px;
+  /* The width is the width of the web page */
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+
+
+  body{
+    height: 100vh;
+  }
+  .pac-container {
+      z-index: 1100 !important;
+  }
+.pac-item{
+  text-align: center;
+}	
+
+.cu-pos-btn{
+
+background-color: gray;
+color: white;
+}
+  
+  .Contenu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  animation-duration: 1s;
+   animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      width: 300%;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
